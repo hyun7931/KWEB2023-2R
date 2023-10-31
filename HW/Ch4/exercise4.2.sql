@@ -1,8 +1,8 @@
 CREATE TABLE `users` (
     `id` INT NOT NULL AUTO_INCREMENT,
-    `username` VARCHAR(16) NOT NULL,
+    `username` VARCHAR(64) NOT NULL,
     `password` VARCHAR(64) NOT NULL,
-    `nickname` VARCHAR(16) NOT NULL,
+    `nickname` VARCHAR(64) NOT NULL,
     `profile_link` VARCHAR(128) NOT NULL,
     `profile_message` VARCHAR(128) NOT NULL,
     `drop_out` TINYINT(1) NOT NULL DEFAULT 0,
@@ -12,7 +12,7 @@ CREATE TABLE `users` (
 
 CREATE TABLE `channels` (
     `id` INT NOT NULL AUTO_INCREMENT,
-    `name` VARCHAR(32) NOT NULL,
+    `name` VARCHAR(64) NOT NULL,
     `who_created_channel` INT NOT NULL,
     `channel_link` VARCHAR(128) NOT NULL,
     `maximun_capacity` INT NOT NULL,

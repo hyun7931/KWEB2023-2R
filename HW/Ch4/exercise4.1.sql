@@ -1,8 +1,8 @@
 CREATE TABLE list_of_students (
-    Name VARCHAR(20) NOT NULL,
+    Name VARCHAR(32) NOT NULL,
     student_number INT NOT NULL,
     year_of_admission INT NOT NULL,
-    major VARCHAR(16) NOT NULL,
+    major VARCHAR(32) NOT NULL,
     phone_number INT NOT NULL,
     address VARCHAR(128) NOT NULL,
     cumulative_credits INT NOT NULL DEFAULT 0,
